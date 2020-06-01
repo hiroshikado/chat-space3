@@ -1,0 +1,38 @@
+.main-chat
+  .main-chat__group-info
+    .group-info__left
+      .group-info__left__group-name
+        test
+      .group-info__left__member
+        Member：masa
+    .group-info__right
+      = link_to "#", class: "group-info__edit-btn", type: "button" do
+        Edit
+  .main-chat__message-list
+    .message-list__message-title
+      .message-list__message-title__user-name
+        masa
+      .message-list__message-title__message-date
+        2019/11/26(Tue) 11:38:08
+    .message-list__message-content
+      こんにちは！
+    .message-list__message-title
+      .message-list__message-title__user-name
+        masa
+      .message-list__message-title__message-date
+        2019/11/26(Tue) 11:38:08
+    .message-list__message-content
+      こんにちは！
+  .main-chat__message-form
+    %main-chat__message-form
+      %input.main-chat__message-form__input-form
+        .input-form
+          %label.main-chat__message-form__message
+            = icon('fa','image',class: 'icon')
+            %input.hidden{type: 'file'}
+        %input.message-form__submit-btn{type: 'submit', value: 'Send'}
+
+
+
+
+
