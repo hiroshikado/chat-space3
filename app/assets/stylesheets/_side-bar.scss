@@ -29,20 +29,21 @@
       }
     }
   }
-  .side-bar__group-list{
+  &__group-list{
     background-color: #2f3e51;
     height: calc(100vh - 100px);
-    .group-list__group-title{
+    .group{
       font-weight: bold;
-      color: #ffffff;
       height: 91px;
-      &__group-name{
+      &__name{
+        color: #ffffff;
         padding-top: 20px;
         font-size: 15px;
         margin-bottom: 5px;
         height: 15px;
       }
-      &__group-message{
+      &__message{
+        color: #ffffff;
         font-size: 11px;
         margin-top: 40px;
       }
