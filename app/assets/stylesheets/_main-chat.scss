@@ -36,6 +36,7 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding-top: 35px;
+    overflow: scroll;
     .message-list__message-title{
       margin-left: 40px;
       display: flex;
