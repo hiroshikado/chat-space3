@@ -17,6 +17,6 @@
       = f.text_field :content, class: 'main-chat__message-form__input-form', placeholder: ' type a message'
       .main-chat__message-form__message
         = f.label :image, class: 'form__mask__image' do
-          = icon('fas', 'image', class: '.input-form__icon')
+          = icon('fas', 'image', class: '.main-chat__message-form__message__icon')
           = f.file_field :image, class: 'hidden'
       = f.submit 'Send', class: 'message-form__submit-btn'

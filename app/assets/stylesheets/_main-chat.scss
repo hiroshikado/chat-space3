@@ -63,33 +63,38 @@
     box-sizing: border-box;
     height: 90px;
     padding: 20px 50px 20px 40px;
+    .new_message{
+      position: relative;
+    }
     &__input-form{
       border: none;
       float: left;
       height: 50px;
-      width: calc(100% - 150px);
+      width: calc(100% - 115px);
     }
     &__message{
       background-color: white;
       float: left;
-      height: 50px;
       padding-right: 10px;
-      .input-form__icon{
-        font-size: 20px;
-        line-height: 50px;
-      }
-      .hidden {
-        display: none;
-      }
+      font-size: 1.3rem;
+      position: absolute;
+      top: 10px;
+      right: 120px;
+      &__icon{
+          line-height: 50px;
+        }
+        .hidden {
+          display: none;
+        }
     }
     .message-form__submit-btn{
-      background-color:#add8e6;
+      background-color: $light_blue;
       border: none;
       color: white;
       float: right;
+      width: 100px;
       font-size: 16px;
       height: 50px;
-      margin-left: 15px;
       padding: 0 30px;
     }
   }
