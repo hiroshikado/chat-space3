@@ -4,7 +4,7 @@
       .group-info__left__group-name
         = @group.name
       .group-info__left__member
-        member:
+        Member:
         - @group.users.each do |user|
           = user.name
     .group-info__right
@@ -14,7 +14,7 @@
     = render @messages
   .main-chat__message-form
     = form_for [@group, @message] do |f|
-      = f.text_field :content, class: 'main-chat__message-form__input-form', placeholder: 'type a message'
+      = f.text_field :content, class: 'main-chat__message-form__input-form', placeholder: ' type a message'
       .main-chat__message-form__message
         = f.label :image, class: 'form__mask__image' do
           = icon('fas', 'image', class: '.input-form__icon')
